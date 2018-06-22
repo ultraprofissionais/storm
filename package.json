@@ -1,0 +1,23 @@
+{
+  "name": "storm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ultraprofissionais/storm.git"
+  },
+  "keywords": [],
+  "author": "Ultra Profissionais",
+  "license": "BSD",
+  "directories": {
+    "lib": "lib"
+  },
+  "description": "Super Typescript ORM",
+  "devDependencies": {
+    "typescript": "^2.9.2"
+  }
+}
