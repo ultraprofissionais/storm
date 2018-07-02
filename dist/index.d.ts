@@ -1,1 +1,1 @@
-export declare function HelloWorld(): void;
+export declare function getTormStorage(): any;

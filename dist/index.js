@@ -1,6 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-function HelloWorld() {
-    console.log('TESTE');
+const platformtools_1 = require("./models/platformtools");
+function getTormStorage() {
+    const globalScope = platformtools_1.PlatformTools.getGlobalVariable();
+    if (!globalScope.torm)
+        globalScope.torm = [];
+    return globalScope.torm;
 }
-exports.HelloWorld = HelloWorld;
+exports.getTormStorage = getTormStorage;
+//# sourceMappingURL=index.js.map
