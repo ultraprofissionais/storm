@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50d55de1-5b99-4158-abf8-e125bb6b225b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/stormcrud.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/stormcrud.ts" afterDir="false" />
-    </list>
+    <list default="true" id="50d55de1-5b99-4158-abf8-e125bb6b225b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -69,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/lib/models/index.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -243,12 +240,12 @@
       <updated>1529515339400</updated>
       <workItem from="1529515343964" duration="7697000" />
       <workItem from="1529699413392" duration="295000" />
-      <workItem from="1530306613250" duration="19577000" />
+      <workItem from="1530306613250" duration="20254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27569000" />
+    <option name="totallyTimeSpent" value="28246000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -261,7 +258,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="247" y="-1048" width="1280" height="709" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50039715" side_tool="true" weight="0.32718122" />
@@ -525,7 +521,7 @@
     <entry file="file://$PROJECT_DIR$/lib/models/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
