@@ -2,26 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50d55de1-5b99-4158-abf8-e125bb6b225b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/decorators/belongsto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/decorators/column.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/decorators/entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/interfaces/normdbfunction-interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/metadatas/column-metadata.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/metadatas/table-metadata.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/metadatas/torm-metadata.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/models/platformtools.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/models/tableoptions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/service/torm-service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/decorators/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/decorate/belongsto.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/decorate/belongsto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/decorate/column.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/decorate/column.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/decorate/entity.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/decorate/entity.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/decorators/belongsto.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/decorators/belongsto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/decorators/belongsto.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/decorators/column.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/decorators/column.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/decorators/column.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/decorators/entity.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/decorators/entity.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/decorators/entity.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/interfaces/normdbfunction-interface.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/interfaces/normdbfunction-interface.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/interfaces/normdbfunction-interface.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/metadatas/column-metadata.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/metadatas/column-metadata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/metadatas/column-metadata.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/metadatas/norm-metadata.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/metadatas/norm-metadata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/metadatas/table-metadata.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/metadatas/table-metadata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/metadatas/table-metadata.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/metadatas/torm-metadata.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/metadatas/torm-metadata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/metadatas/torm-metadata.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/models/platformtools.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/models/platformtools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/models/platformtools.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/models/tableoptions.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/models/tableoptions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/models/tableoptions.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/service/norm-service.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/service/norm-service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/service/torm-service.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/service/torm-service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/service/torm-service.js.map" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,11 +60,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="entity.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+              <folding>
+                <element signature="e#1#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/decorators/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="belongsto.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/decorators/belongsto.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="25" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="column.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/decorators/column.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entity.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/decorators/entity.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+            <state relative-caret-position="60">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="22" />
               <folding>
                 <element signature="e#1#55#0" expanded="true" />
               </folding>
@@ -72,6 +136,7 @@
         <option value="$PROJECT_DIR$/lib/models/platformtools.ts" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/lib/decorators/index.ts" />
       </list>
     </option>
   </component>
@@ -92,8 +157,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-17" />
-    <option name="y" value="-830" />
+    <option name="x" value="143" />
+    <option name="y" value="-1045" />
     <option name="width" value="1280" />
     <option name="height" value="709" />
   </component>
@@ -174,12 +239,12 @@
       <updated>1529515339400</updated>
       <workItem from="1529515343964" duration="7697000" />
       <workItem from="1529699413392" duration="295000" />
-      <workItem from="1530306613250" duration="5739000" />
+      <workItem from="1530306613250" duration="7760000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13731000" />
+    <option name="totallyTimeSpent" value="15752000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -191,16 +256,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-17" y="-830" width="1280" height="709" extended-state="0" />
+    <frame x="143" y="-1045" width="1280" height="709" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50039715" side_tool="true" weight="0.32718122" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" sideWeight="0.50086355" side_tool="true" weight="0.24274014" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49960285" visible="true" weight="0.32718122" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49960285" visible="true" weight="0.32718122" />
       <window_info anchor="bottom" id="TypeScript" order="7" weight="0.3305369" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49913645" visible="true" weight="0.24146147" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49913645" visible="true" weight="0.24146147" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956383" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24944155" />
@@ -294,29 +360,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding>
-            <element signature="e#1#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tslint.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tsconfig.old.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/decorators/belongsto.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -360,20 +409,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding>
+            <element signature="e#1#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/decorators/belongsto.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/decorators/column.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="30">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/decorators/entity.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+        <state relative-caret-position="60">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="22" />
           <folding>
             <element signature="e#1#55#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/decorators/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>

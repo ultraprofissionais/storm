@@ -1,1 +1,0 @@
-{"version":3,"file":"belongsto.js","sourceRoot":"","sources":["../../lib/decorators/belongsto.ts"],"names":[],"mappings":";;AACA,0DAA2D;AAC3D,mBAA0B,QAAgB;IAEzC,yBAAyB,KAAU,EAAE,QAAyB;QAK7D,+BAAgB,CAAE,KAAK,CAAC,WAAW,CAAC,IAAI,CAAC,WAAW,EAAE,EAAG,QAAQ,CAAC,CAAC;IACpE,CAAC;IAED,OAAO,eAAe,CAAC;AAExB,CAAC;AAZD,8BAYC"}
