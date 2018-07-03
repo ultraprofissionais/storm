@@ -26,7 +26,7 @@ export function Entity( entity: any, tableoptions?: TableOptions ): any{
 	}
 	newConstructor.prototype = entity.prototype;
 
-	newConstructor.prototype.getSql = function(){
+	newConstructor.prototype.getSql = () => {
 		// 'inner join fktable on fktable.fkcolumn=table.fkcolumn'
 		return ` inner join ${tableoptions.fktable} on ${tableoptions.fktable}.${tableoptions.fkcolumn}=${tableoptions.table}.${tableoptions.fkcolumn} `;
 	}
