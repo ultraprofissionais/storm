@@ -1,2 +1,2 @@
 
-export * from './normdbfunction-interface';
+export * from './stormcrud-interface';

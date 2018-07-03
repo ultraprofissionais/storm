@@ -1,5 +1,5 @@
 
-export interface NormDBFunction {
+export interface StormCrud {
 
 	save(bean: any): boolean;
 
