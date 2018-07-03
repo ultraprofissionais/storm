@@ -3,9 +3,9 @@ export class StormCrud {
 
 	save(bean?: any): boolean {
         console.log('THIS: ', this);
-        return false
+        return false;
 	};
 
-	delete(): boolean { return false };
+	delete(): boolean { return false; };
 
 }
