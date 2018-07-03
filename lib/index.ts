@@ -1,6 +1,9 @@
 
+
 import { PlatformTools } from './models/platformtools';
 import { TormMetadata } from './metadatas/torm-metadata';
+
+
 export function getTormStorage(): any {
     // we should store metadata storage in a global variable otherwise it brings too much problems
     // one of the problem is that if any entity (or any other) will be imported before consumer will call
