@@ -1,8 +1,9 @@
 
 import { TableOptions } from '../models/tableoptions';
 import { insertSqlQuery, setColumnTable, setTormTable, valueSqlQuery } from '../service/torm-service';
+import {NormDBFunction} from '../interfaces/normdbfunction-interface';
 
-export function Entity( entity: any, tableoptions?: TableOptions ): any{
+export function Entity( entity: any, tableoptions?: TableOptions ): any & NormDBFunction {
 	console.log('TableInheritance 1: ', entity);
 
 	if (!tableoptions){

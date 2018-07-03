@@ -23,5 +23,9 @@ export class StormDatabase {
         this.databaseClient.connect();
     }
 
+    query = (sql: string) => {
+        this.databaseClient.query(sql);
+    }
+
 
 }
