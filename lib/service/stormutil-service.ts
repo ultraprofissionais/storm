@@ -68,7 +68,9 @@ export class StormutilService {
         });
 
         getStormStorage()[tablename].fkcolumns.forEach( (element: any) => {
+            console.log('valueSqlQuery - FKCOLUMNS ELEMENT: ', element);
             const fkcolumn = element.split('.');
+            console.log('FvalueSqlQuery KCOLUMN: ', fkcolumn);
             values.push( bean[fkcolumn[0]][fkcolumn[1]] );
         });
 

@@ -2,10 +2,10 @@ import { getStormStorage } from '../index';
 import { TableMetadata } from '../metadatas/table-metadata';
 
 
-export function setStormTable(table: string) {
+export function AsetStormTable(table: string) {
 	const tablename = table.toLowerCase();
 
-	console.log('setStormTable - getStormTable 1: ', getStormStorage() );
+	console.log('AsetStormTable - getStormTable 1: ', getStormStorage() );
 	if (!getStormStorage()[tablename]){
 		getStormStorage()[tablename] = new TableMetadata(tablename);
 	}
@@ -13,19 +13,19 @@ export function setStormTable(table: string) {
 	// console.log('getStormTable 2: ', getStormStorage()[tablename] );
 }
 
-export function setColumnTable(table: string, column: string){
+export function AsetColumnTable(table: string, column: string){
 	const tablename = table.toLowerCase();
-	setStormTable(tablename);
+	AsetStormTable(tablename);
 	getStormStorage()[tablename].columns.push( column );
 }
 
-export function setFkColumnTable(table: string, column: string){
+export function AsetFkColumnTable(table: string, column: string){
 	const tablename = table.toLowerCase();
-	setStormTable(tablename);
+	AsetStormTable(tablename);
 	getStormStorage()[tablename].fkcolumns.push( column );
 }
 
-export function insertSqlQuery(tablename: string){
+export function AinsertSqlQuery(tablename: string){
 	const table: any = getStormStorage()[tablename.toLowerCase()];
 
 	let columnSql: string = table.columns.join(', ');
@@ -50,7 +50,7 @@ export function insertSqlQuery(tablename: string){
 
 }
 
-export function valueSqlQuery(bean: Object){
+export function AvalueSqlQuery(bean: Object){
 	const tablename: string = bean.constructor.name.toLowerCase();
 
 	console.log('valueSqlQuery - BEAN: ', bean);

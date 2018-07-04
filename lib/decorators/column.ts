@@ -1,7 +1,8 @@
 
-import { setColumnTable } from '../service/storm-service';
+import {StormutilService} from '../service';
+
 export function Column(model: any, target: any){
 
-	setColumnTable( model.constructor.name.toLowerCase() , target);
+	StormutilService.setColumnTable( model.constructor.name.toLowerCase() , target);
 	return this;
 }
