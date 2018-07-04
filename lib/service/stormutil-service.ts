@@ -71,7 +71,13 @@ export class StormutilService {
             console.log('valueSqlQuery - FKCOLUMNS ELEMENT: ', element);
             const fkcolumn = element.split('.');
             console.log('FvalueSqlQuery KCOLUMN: ', fkcolumn);
-            values.push( bean[fkcolumn[0]][fkcolumn[1]] );
+
+            if ( bean[fkcolumn[0]] !== undefined ){
+                if ( bean[fkcolumn[0]][fkcolumn[1]] !== undefined ) {
+                    values.push( bean[fkcolumn[0]][fkcolumn[1]] );
+                }
+            }
+
         });
 
         console.log('insertSqlQuery - values: ', values);
