@@ -1,5 +1,5 @@
+import {StormutilService} from '../service';
 
-import { setFkColumnTable } from '../service/storm-service';
 export function belongsTo(fkcolumn: string){
 
 	function actualDecorator(model: any, property: string | symbol): void {
@@ -7,7 +7,7 @@ export function belongsTo(fkcolumn: string){
 		// console.log('TARGET: ', tablename);
 		// console.log('PROPERTY: ', property);
 		// console.log('FKCOLUMN: ', fkcolumn);
-		setFkColumnTable( model.constructor.name.toLowerCase() , fkcolumn);
+		StormutilService.setFkColumnTable( model.constructor.name.toLowerCase() , fkcolumn);
 	}
 
 	return actualDecorator;
