@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50d55de1-5b99-4158-abf8-e125bb6b225b" name="Default" comment="" />
+    <list default="true" id="50d55de1-5b99-4158-abf8-e125bb6b225b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -43,8 +45,8 @@
       <file leaf-file-name="stormutil-service.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/service/stormutil-service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="77" selection-start-line="77" selection-end-line="77" />
+            <state relative-caret-position="364">
+              <caret line="75" column="43" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
               </folding>
@@ -146,7 +148,6 @@
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/dist/package.json" />
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
@@ -251,12 +252,12 @@
       <updated>1529515339400</updated>
       <workItem from="1529515343964" duration="7697000" />
       <workItem from="1529699413392" duration="295000" />
-      <workItem from="1530306613250" duration="25288000" />
+      <workItem from="1530306613250" duration="25319000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33280000" />
+    <option name="totallyTimeSpent" value="33311000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -545,8 +546,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/service/stormutil-service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="364">
+          <caret line="75" column="43" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
           </folding>
