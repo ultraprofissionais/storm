@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50d55de1-5b99-4158-abf8-e125bb6b225b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/service/stormutil-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/service/stormutil-service.ts" afterDir="false" />
-    </list>
+    <list default="true" id="50d55de1-5b99-4158-abf8-e125bb6b225b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -68,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/lib/decorators/belongsto.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -254,12 +251,12 @@
       <updated>1529515339400</updated>
       <workItem from="1529515343964" duration="7697000" />
       <workItem from="1529699413392" duration="295000" />
-      <workItem from="1530306613250" duration="24685000" />
+      <workItem from="1530306613250" duration="25288000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32677000" />
+    <option name="totallyTimeSpent" value="33280000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -272,7 +269,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-147" y="-1048" width="1674" height="902" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50039715" side_tool="true" weight="0.32718122" />
@@ -536,7 +532,7 @@
     <entry file="file://$PROJECT_DIR$/lib/decorators/belongsto.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
