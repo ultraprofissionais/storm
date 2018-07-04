@@ -22,7 +22,19 @@ export class StormutilService {
     static setFkColumnTable(table: string, column: string){
         const tablename = table.toLowerCase();
         this.setTable(tablename);
-        getStormStorage()[tablename].fkcolumns.push( column );
+        getStormStorage()[tablename].fkColumns.push( column );
+    }
+
+    static setPkColumnTable(table: string, column: string){
+        const tablename = table.toLowerCase();
+        this.setTable(tablename);
+        getStormStorage()[tablename].pkColumns.push( column );
+    }
+
+    static setInhColumnTable(table: string, column: string){
+        const tablename = table.toLowerCase();
+        this.setTable(tablename);
+        getStormStorage()[tablename].inhColumns.push( column );
     }
 
     /*

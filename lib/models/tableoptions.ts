@@ -1,7 +1,7 @@
 
 export class TableOptions {
 
-	Table?: string = '';
+	table?: string = '';
 	pkColumn?: string;
 
 	fkTable?: string;

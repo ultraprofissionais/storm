@@ -1,10 +1,11 @@
-import { ColumnMetadata } from './column-metadata';
 
 export class TableMetadata{
 
 	name ?: string;
-	columns ?: string[] = [];
-	fkcolumns ?: string[] = [];
+    columns ?: string[] = [];
+	pkColumns ?: string[] = [];
+	fkColumns ?: string[] = [];
+	inhColumns ?: string[] = [];
 
 	constructor(name: string){
 		this.name = name;
