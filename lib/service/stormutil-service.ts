@@ -25,6 +25,18 @@ export class StormutilService {
         getStormStorage()[tablename].fkcolumns.push( column );
     }
 
+    /*
+
+        É preciso criar um mecanismo aonde eu faço assim:
+
+        Pessoa [];
+        Usuario []
+
+
+
+     */
+
+
     static insertSqlQuery(tablename: string){
         const table: any = getStormStorage()[tablename.toLowerCase()];
 

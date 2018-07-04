@@ -1,10 +1,13 @@
 
 export class TableOptions {
 
-	table?: string = '';
-	pkcolumn?: string;
+	Table?: string = '';
+	pkColumn?: string;
 
-	fktable?: string;
-	fkcolumn?: string;
+	fkTable?: string;
+	fkColumn?: string;
+
+	inhTable?: string;
+	inhColumn?: string;
 
 }

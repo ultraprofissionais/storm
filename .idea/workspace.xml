@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50d55de1-5b99-4158-abf8-e125bb6b225b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/lib/decorators/column.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/decorators/column.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/decorators/entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/decorators/entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/tableoptions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/tableoptions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/service/stormutil-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/service/stormutil-service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,14 +18,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="entity.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="entity.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/decorators/entity.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="37" column="64" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
+            <state relative-caret-position="53">
+              <caret line="38" column="53" lean-forward="true" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
               <folding>
                 <element signature="e#1#55#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tableoptions.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/models/tableoptions.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -33,11 +44,11 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="column.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="column.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/decorators/column.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+            <state relative-caret-position="150">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -45,8 +56,8 @@
       <file leaf-file-name="stormutil-service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/service/stormutil-service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="75" column="43" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
+            <state relative-caret-position="216">
+              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
               </folding>
@@ -66,8 +77,8 @@
       <file leaf-file-name="belongsto.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/decorators/belongsto.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            <state relative-caret-position="135">
+              <caret line="9" column="35" selection-start-line="9" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -97,6 +108,7 @@
       <find>base</find>
       <find>noImplicitAny</find>
       <find>NormDBFunction</find>
+      <find>TableInheritance</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -107,7 +119,6 @@
       <list>
         <option value="$PROJECT_DIR$/lib/service/norm-service.ts" />
         <option value="$PROJECT_DIR$/lib/metadatas/norm-metadata.ts" />
-        <option value="$PROJECT_DIR$/lib/models/tableoptions.ts" />
         <option value="$PROJECT_DIR$/lib/models/platformtools.ts" />
         <option value="$PROJECT_DIR$/lib/decorators/index.ts" />
         <option value="$PROJECT_DIR$/lib/models/database-connection.ts" />
@@ -127,11 +138,12 @@
         <option value="$PROJECT_DIR$/lib/index.ts" />
         <option value="$PROJECT_DIR$/lib/service/stormutil.ts" />
         <option value="$PROJECT_DIR$/lib/service/index.ts" />
-        <option value="$PROJECT_DIR$/lib/decorators/entity.ts" />
         <option value="$PROJECT_DIR$/lib/service/storm-service.ts" />
         <option value="$PROJECT_DIR$/lib/decorators/belongsto.ts" />
-        <option value="$PROJECT_DIR$/lib/service/stormutil-service.ts" />
         <option value="$PROJECT_DIR$/lib/decorators/column.ts" />
+        <option value="$PROJECT_DIR$/lib/service/stormutil-service.ts" />
+        <option value="$PROJECT_DIR$/lib/models/tableoptions.ts" />
+        <option value="$PROJECT_DIR$/lib/decorators/entity.ts" />
       </list>
     </option>
   </component>
@@ -253,12 +265,12 @@
       <updated>1529515339400</updated>
       <workItem from="1529515343964" duration="7697000" />
       <workItem from="1529699413392" duration="295000" />
-      <workItem from="1530306613250" duration="26187000" />
+      <workItem from="1530306613250" duration="27507000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34179000" />
+    <option name="totallyTimeSpent" value="35499000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -368,13 +380,6 @@
     <entry file="file://$PROJECT_DIR$/tsconfig.old.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/models/tableoptions.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/models/database-connection.ts">
@@ -512,25 +517,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/decorators/entity.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="37" column="64" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
-          <folding>
-            <element signature="e#1#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/metadatas/column-metadata.ts">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/decorators/belongsto.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/service/storm-service.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -539,20 +527,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/decorators/column.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/decorators/belongsto.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="35" selection-start-line="9" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/service/stormutil-service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="75" column="43" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
+        <state relative-caret-position="216">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/decorators/column.ts">
+    <entry file="file://$PROJECT_DIR$/lib/models/tableoptions.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        <state relative-caret-position="45">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/decorators/entity.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="38" column="53" lean-forward="true" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="53" />
+          <folding>
+            <element signature="e#1#55#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

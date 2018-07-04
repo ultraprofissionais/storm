@@ -3,22 +3,23 @@ import { TableOptions } from '../models/tableoptions';
 import {StormutilService} from '../service';
 
 export function Entity( entity: any, tableoptions?: TableOptions ): any  {
-	console.log('TableInheritance 1: ', entity);
+	console.log('TableInheritance - entity: ', entity);
 
 	if (!tableoptions){
 		tableoptions = new TableOptions();
 	}
 
-	if (!tableoptions.table){
-		tableoptions.table = entity.name.toLowerCase();
+	if (!tableoptions.Table){
+		tableoptions.Table = entity.name.toLowerCase();
 	}
-	StormutilService.setTable(tableoptions.table);
+	StormutilService.setTable(tableoptions.Table);
 
-	if (tableoptions.fkcolumn !== undefined){
-		if (!tableoptions.pkcolumn){
-			tableoptions.pkcolumn = tableoptions.fkcolumn;
+	if (tableoptions.inhColumn !== undefined){
+	    StormutilService.setFkColumnTable(tableoptions.Table, tableoptions.inhColumn ); // CRIAR UM VINCULO COM O EXTENDED
+		if (!tableoptions.pkColumn){
+			tableoptions.pkColumn = tableoptions.inhColumn;
 		}
-        StormutilService.setColumnTable(tableoptions.table, tableoptions.pkcolumn);
+        StormutilService.setColumnTable(tableoptions.Table, tableoptions.pkColumn);
 	}
 
 	function newConstructor( ...args ){
@@ -27,15 +28,15 @@ export function Entity( entity: any, tableoptions?: TableOptions ): any  {
 	newConstructor.prototype = entity.prototype;
 
 	newConstructor.prototype.getSql = () => {
-		// 'inner join fktable on fktable.fkcolumn=table.fkcolumn'
-		return ` inner join ${tableoptions.fktable} on ${tableoptions.fktable}.${tableoptions.fkcolumn}=${tableoptions.table}.${tableoptions.fkcolumn} `;
+		// 'inner join inhTable on inhTable.fkcolumn=table.fkcolumn'
+		return ` inner join ${tableoptions.inhTable} on ${tableoptions.inhTable}.${tableoptions.inhColumn}=${tableoptions.Table}.${tableoptions.inhColumn} `;
 	}
 
 	// OVERWRITE SAVE FUNCTION
 	Object.defineProperty(newConstructor.prototype, 'save', {
 		value: function(): boolean {
 			console.log('ENTITY - SAVE FUNCTION - OBJ: ', this );
-            StormutilService.insertSqlQuery(tableoptions.table);
+            StormutilService.insertSqlQuery(tableoptions.Table);
             StormutilService.valueSqlQuery(this);
 			return true;
 		},
@@ -46,7 +47,7 @@ export function Entity( entity: any, tableoptions?: TableOptions ): any  {
 		console.log('Entity OBJ 1: ', bean.get() );
 		console.log('Entity OBJ 2: ', this );
 		console.log('Entity OBJ 3: ', newConstructor);
-		insertSqlQuery(tableoptions.table);
+		insertSqlQuery(tableoptions.Table);
 		valueSqlQuery(bean);
 		return true;
 	};
@@ -56,7 +57,7 @@ export function Entity( entity: any, tableoptions?: TableOptions ): any  {
 		return true;
 	};
 
-	console.log('TableInheritance 2: ', newConstructor.prototype);
+	console.log('Entity - newConstructor: ', newConstructor.prototype);
 
 	return newConstructor;
 }
