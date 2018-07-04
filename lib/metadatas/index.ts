@@ -1,4 +1,4 @@
 
 export * from './column-metadata';
 export * from './table-metadata';
-export * from './torm-metadata';
+export * from './storm-metadata';

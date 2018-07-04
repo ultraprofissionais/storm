@@ -1,5 +1,5 @@
 
-import { setFkColumnTable } from '../service/torm-service';
+import { setFkColumnTable } from '../service/storm-service';
 export function belongsTo(fkcolumn: string){
 
 	function actualDecorator(model: any, property: string | symbol): void {

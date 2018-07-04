@@ -1,6 +1,6 @@
 
 import { TableOptions } from '../models/tableoptions';
-import { insertSqlQuery, setColumnTable, setTormTable, valueSqlQuery } from '../service/torm-service';
+import {StormutilService} from '../service';
 
 export function Entity( entity: any, tableoptions?: TableOptions ): any  {
 	console.log('TableInheritance 1: ', entity);
@@ -12,13 +12,13 @@ export function Entity( entity: any, tableoptions?: TableOptions ): any  {
 	if (!tableoptions.table){
 		tableoptions.table = entity.name.toLowerCase();
 	}
-	setTormTable(tableoptions.table);
+	StormutilService.setTable(tableoptions.table);
 
 	if (tableoptions.fkcolumn !== undefined){
 		if (!tableoptions.pkcolumn){
 			tableoptions.pkcolumn = tableoptions.fkcolumn;
 		}
-		setColumnTable(tableoptions.table, tableoptions.pkcolumn);
+        StormutilService.setColumnTable(tableoptions.table, tableoptions.pkcolumn);
 	}
 
 	function newConstructor( ...args ){
@@ -31,11 +31,12 @@ export function Entity( entity: any, tableoptions?: TableOptions ): any  {
 		return ` inner join ${tableoptions.fktable} on ${tableoptions.fktable}.${tableoptions.fkcolumn}=${tableoptions.table}.${tableoptions.fkcolumn} `;
 	}
 
+	// OVERWRITE SAVE FUNCTION
 	Object.defineProperty(newConstructor.prototype, 'save', {
 		value: function(): boolean {
-			console.log('Entity OBJ: ', this );
-			insertSqlQuery(tableoptions.table);
-			valueSqlQuery(this);
+			console.log('ENTITY - SAVE FUNCTION - OBJ: ', this );
+            StormutilService.insertSqlQuery(tableoptions.table);
+            StormutilService.valueSqlQuery(this);
 			return true;
 		},
 	});

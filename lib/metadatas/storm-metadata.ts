@@ -1,7 +1,7 @@
 
 
 import { TableMetadata } from './table-metadata';
-export class TormMetadata{
+export class StormMetadata{
 
 	tables: TableMetadata[] = [];
 }

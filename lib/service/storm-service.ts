@@ -1,41 +1,43 @@
-import { getTormStorage } from '../index';
+import { getStormStorage } from '../index';
 import { TableMetadata } from '../metadatas/table-metadata';
-export function setTormTable(table: string) {
+
+
+export function setStormTable(table: string) {
 	const tablename = table.toLowerCase();
 
-	// console.log('getTormTable 1: ', getTormStorage() );
-	if (!getTormStorage()[tablename]){
-		getTormStorage()[tablename] = new TableMetadata(tablename);
+	console.log('setStormTable - getStormTable 1: ', getStormStorage() );
+	if (!getStormStorage()[tablename]){
+		getStormStorage()[tablename] = new TableMetadata(tablename);
 	}
 
-	// console.log('getTormTable 2: ', getTormStorage()[tablename] );
+	// console.log('getStormTable 2: ', getStormStorage()[tablename] );
 }
 
 export function setColumnTable(table: string, column: string){
 	const tablename = table.toLowerCase();
-	setTormTable(tablename);
-	getTormStorage()[tablename].columns.push( column );
+	setStormTable(tablename);
+	getStormStorage()[tablename].columns.push( column );
 }
 
 export function setFkColumnTable(table: string, column: string){
 	const tablename = table.toLowerCase();
-	setTormTable(tablename);
-	getTormStorage()[tablename].fkcolumns.push( column );
+	setStormTable(tablename);
+	getStormStorage()[tablename].fkcolumns.push( column );
 }
 
 export function insertSqlQuery(tablename: string){
-	const table: any = getTormStorage()[tablename.toLowerCase()];
+	const table: any = getStormStorage()[tablename.toLowerCase()];
 
 	let columnSql: string = table.columns.join(', ');
 	const valueSql: string[] = [];
 	let indice: number = 1;
 
-	// console.log('COLUMNS: ', table.columns );
+	console.log('insertSqlQuery - COLUMNS: ', table.columns );
 	table.columns.forEach( () => {
 		valueSql.push('$' + indice++ );
 	});
 
-	// console.log('FK COLUMNS: ', table.fkcolumns );
+	console.log('insertSqlQuery - FK COLUMNS: ', table.fkcolumns );
 	table.fkcolumns.forEach( (element) => {
 		const fkcolumn = element.split('.');
 		columnSql = `${columnSql}, ${fkcolumn[1]}`;
@@ -43,7 +45,7 @@ export function insertSqlQuery(tablename: string){
 	});
 
 	const insertSql:string = `INSERT INTO ${tablename.toLowerCase()}(${columnSql}) VALUES (${valueSql.join(', ')}) RETURNING * `;
-	console.log('insertSql: ', insertSql);
+	console.log('insertSqlQuery - insertSql: ', insertSql);
 	return insertSql;
 
 }
@@ -51,12 +53,12 @@ export function insertSqlQuery(tablename: string){
 export function valueSqlQuery(bean: Object){
 	const tablename: string = bean.constructor.name.toLowerCase();
 
-	// console.log('BEAN: ', bean);
-	// console.log('COLUMNS: ', getTormStorage()[tablename].columns);
-	// console.log('FK COLUMNS: ', getTormStorage()[tablename].fkcolumns);
+	console.log('valueSqlQuery - BEAN: ', bean);
+	console.log('valueSqlQuery - COLUMNS: ', getStormStorage()[tablename].columns);
+	console.log('valueSqlQuery - FK COLUMNS: ', getStormStorage()[tablename].fkcolumns);
 
 	const values: any = [];
-	getTormStorage()[tablename].columns.forEach( (column: any) => {
+	getStormStorage()[tablename].columns.forEach( (column: any) => {
 		// console.log(`${column}`, bean[column]);
 		if ( bean[column] === undefined ){
 			values.push( null );
@@ -65,11 +67,11 @@ export function valueSqlQuery(bean: Object){
 		}
 	});
 
-	getTormStorage()[tablename].fkcolumns.forEach( (element: any) => {
+	getStormStorage()[tablename].fkcolumns.forEach( (element: any) => {
 		const fkcolumn = element.split('.');
 		values.push( bean[fkcolumn[0]][fkcolumn[1]] );
 	});
 
-	console.log('valueSqlQuery: ', values);
+	console.log('insertSqlQuery - values: ', values);
 	return values;
 }

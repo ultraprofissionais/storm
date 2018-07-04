@@ -1,10 +1,9 @@
 
 
 import { PlatformTools } from './models/platformtools';
-import { TormMetadata } from './metadatas/torm-metadata';
 
 
-export function getTormStorage(): any {
+export function getStormStorage(): any {
     // we should store metadata storage in a global variable otherwise it brings too much problems
     // one of the problem is that if any entity (or any other) will be imported before consumer will call
     // useContainer method with his own container implementation, that entity will be registered in the
@@ -14,8 +13,8 @@ export function getTormStorage(): any {
     // and it may load entities which register decorators in typeorm of local package
     // this leads to impossibility of usage of entities in migrations and cli related operations
     const globalScope = PlatformTools.getGlobalVariable();
-    if (!globalScope.torm)
-        globalScope.torm = [];
 
-    return globalScope.torm;
+    if (!globalScope.storm) globalScope.storm = [];
+
+    return globalScope.storm;
 }

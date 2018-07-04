@@ -1,2 +1,3 @@
 
-export * from './torm-service';
+export * from './storm-service';
+export * from './stormutil-service';
