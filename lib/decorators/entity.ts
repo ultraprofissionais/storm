@@ -1,6 +1,6 @@
 
 import { TableOptions } from '../models/tableoptions';
-import {StormutilService} from '../service';
+import { StormutilService } from '../service';
 
 export function Entity( entity: any, tableoptions?: TableOptions ): any  {
 	console.log('TableInheritance - entity: ', entity);
