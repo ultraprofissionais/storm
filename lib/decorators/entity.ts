@@ -11,12 +11,16 @@ export function Entity( entity: any, tableoptions?: TableOptions ): any  {
 
 	if (!tableoptions.table){
 		tableoptions.table = entity.name.toLowerCase();
-	}
+	} else {
+        tableoptions.table = tableoptions.table.toLowerCase();
+    }
+
+
 	StormutilService.setTable(tableoptions.table);
 
 	if (tableoptions.inhColumn !== undefined){
         StormutilService.setPkColumnTable(tableoptions.table, tableoptions.inhColumn ); // CRIAR UM VINCULO COM O EXTENDED
-        StormutilService.setInhColumnTable(tableoptions.table, tableoptions.inhColumn ); // CRIAR UM VINCULO COM O EXTENDED
+        StormutilService.setInhTable(tableoptions.table, tableoptions.inhTable, tableoptions.inhColumn ); // CRIAR UM VINCULO COM O EXTENDED
 		//if (!tableoptions.pkColumn){
 		//	tableoptions.pkColumn = tableoptions.inhColumn;
 		//}
@@ -36,9 +40,13 @@ export function Entity( entity: any, tableoptions?: TableOptions ): any  {
 	// OVERWRITE SAVE FUNCTION
 	Object.defineProperty(newConstructor.prototype, 'save', {
 		value: function(): boolean {
-			console.log('ENTITY - SAVE FUNCTION - OBJ: ', this );
-            StormutilService.insertSqlQuery(tableoptions.table);
-            StormutilService.valueSqlQuery(this);
+		    const id = StormutilService.getPkColumn(this);
+
+		    if ( id === 0 ){
+                StormutilService.insertSql(this);
+            } else {
+		        StormutilService.updateSql(this);
+            }
 			return true;
 		},
 	});

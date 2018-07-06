@@ -1,11 +1,15 @@
 
-export class TableMetadata{
+export class TableMetadata {
 
 	name ?: string;
+    inhTable ?: string;
+    inhColumn ?: string;
+
+
     columns ?: string[] = [];
-	pkColumns ?: string[] = [];
+	pkColumn ?: string;
 	fkColumns ?: string[] = [];
-	inhColumns ?: string[] = [];
+
 
 	constructor(name: string){
 		this.name = name;

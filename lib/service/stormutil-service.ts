@@ -19,35 +19,21 @@ export class StormutilService {
         getStormStorage()[tablename].columns.push( column );
     }
 
-    static setFkColumnTable(table: string, column: string){
-        const tablename = table.toLowerCase();
-        this.setTable(tablename);
-        getStormStorage()[tablename].fkColumns.push( column );
+    static setFkColumnTable(table: string, fkColumn: string){
+        this.setTable(table);
+        getStormStorage()[table].fkColumns.push( fkColumn );
     }
 
-    static setPkColumnTable(table: string, column: string){
-        const tablename = table.toLowerCase();
-        this.setTable(tablename);
-        getStormStorage()[tablename].pkColumns.push( column );
+    static setPkColumnTable(table: string, pkColumn: string){
+        this.setTable(table);
+        getStormStorage()[table].pkColumn = pkColumn;
     }
 
-    static setInhColumnTable(table: string, column: string){
-        const tablename = table.toLowerCase();
-        this.setTable(tablename);
-        getStormStorage()[tablename].inhColumns.push( column );
+    static setInhTable(table: string, inhTable: string,  inhColumn: string){
+        this.setTable(table);
+        getStormStorage()[table].inhTable = inhTable;
+        getStormStorage()[table].inhColumn = inhColumn;
     }
-
-    /*
-
-        É preciso criar um mecanismo aonde eu faço assim:
-
-        Pessoa [];
-        Usuario []
-
-
-
-     */
-
 
     static insertSqlQuery(tablename: string){
         const table: any = getStormStorage()[tablename.toLowerCase()];
@@ -86,8 +72,40 @@ export class StormutilService {
 
     }
 
-    static valueSqlQuery(bean: Object){
-        const table: any = getStormStorage()[bean.constructor.name.toLowerCase()];
+    static insertSql(bean: Object){
+        const table: TableMetadata = getStormStorage()[bean.constructor.name.toLowerCase()];
+
+        if (table.inhColumn !== undefined ){
+            console.log('INHERITI TABLE 1');
+            StormutilService.insertSqlQuery(table.inhTable);
+            StormutilService.valueSqlQuery(table.inhTable, bean);
+
+            console.log('PRINCIPAL TABLE 1');
+            StormutilService.insertSqlQuery(table.name);
+            StormutilService.valueSqlQuery(table.name, bean);
+        } else {
+            console.log('PRINCIPAL TABLE 2');
+            StormutilService.insertSqlQuery(table.name);
+            StormutilService.valueSqlQuery(table.name, bean);
+        }
+    }
+
+    static updateSql(bean: Object){
+        const table: TableMetadata = getStormStorage()[bean.constructor.name.toLowerCase()];
+
+        //StormutilService.updateSqlQuery(table.name);
+        if (table.inhColumn !== undefined ){
+
+        }
+    }
+
+    static getPkColumn(bean: Object){
+        const table:TableMetadata = getStormStorage()[bean.constructor.name.toLowerCase()];
+        return bean[table.pkColumn];
+    }
+
+    static valueSqlQuery(tablename: string, bean: Object){
+        const table: any = getStormStorage()[tablename];
 
         console.log('valueSqlQuery - table: ', table);
         console.log('valueSqlQuery - BEAN: ', bean);
