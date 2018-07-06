@@ -51,6 +51,7 @@ export class StormutilService {
 
     static insertSqlQuery(tablename: string){
         const table: any = getStormStorage()[tablename.toLowerCase()];
+        console.log('insertSqlQuery - table: ', table);
 
         let columnSql: string = table.columns.join(', ');
         const valueSql: string[] = [];
@@ -62,6 +63,13 @@ export class StormutilService {
         });
 
         console.log('insertSqlQuery - FK COLUMNS: ', table.fkcolumns );
+        table.fkcolumns.forEach( (element) => {
+            const fkcolumn = element.split('.');
+            columnSql = `${columnSql}, ${fkcolumn[1]}`;
+            valueSql.push('$' + indice++ );
+        });
+
+        console.log('insertSqlQuery - INH COLUMNS: ', table.fkcolumns );
         table.fkcolumns.forEach( (element) => {
             const fkcolumn = element.split('.');
             columnSql = `${columnSql}, ${fkcolumn[1]}`;

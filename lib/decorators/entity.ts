@@ -15,7 +15,8 @@ export function Entity( entity: any, tableoptions?: TableOptions ): any  {
 	StormutilService.setTable(tableoptions.table);
 
 	if (tableoptions.inhColumn !== undefined){
-	    StormutilService.setPkColumnTable(tableoptions.table, tableoptions.inhColumn ); // CRIAR UM VINCULO COM O EXTENDED
+        StormutilService.setPkColumnTable(tableoptions.table, tableoptions.inhColumn ); // CRIAR UM VINCULO COM O EXTENDED
+        StormutilService.setInhColumnTable(tableoptions.table, tableoptions.inhColumn ); // CRIAR UM VINCULO COM O EXTENDED
 		//if (!tableoptions.pkColumn){
 		//	tableoptions.pkColumn = tableoptions.inhColumn;
 		//}
