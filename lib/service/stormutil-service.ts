@@ -63,18 +63,22 @@ export class StormutilService {
         });
 
         console.log('insertSqlQuery - FK COLUMNS: ', table.fkcolumns );
-        table.fkcolumns.forEach( (element) => {
-            const fkcolumn = element.split('.');
-            columnSql = `${columnSql}, ${fkcolumn[1]}`;
-            valueSql.push('$' + indice++ );
-        });
+        if (table.fkcolumns !== undefined){
+            table.fkcolumns.forEach( (element) => {
+                const fkcolumn = element.split('.');
+                columnSql = `${columnSql}, ${fkcolumn[1]}`;
+                valueSql.push('$' + indice++ );
+            });
+        }
 
-        console.log('insertSqlQuery - INH COLUMNS: ', table.fkcolumns );
-        table.fkcolumns.forEach( (element) => {
-            const fkcolumn = element.split('.');
-            columnSql = `${columnSql}, ${fkcolumn[1]}`;
-            valueSql.push('$' + indice++ );
-        });
+        if (table.inhcolumns !== undefined){
+            console.log('insertSqlQuery - INH COLUMNS: ', table.fkcolumns );
+            table.inhcolumns.forEach( (element) => {
+                const inhcolumns = element.split('.');
+                columnSql = `${columnSql}, ${inhcolumns[1]}`;
+                valueSql.push('$' + indice++ );
+            });
+        }
 
         const insertSql:string = `INSERT INTO ${tablename.toLowerCase()}(${columnSql}) VALUES (${valueSql.join(', ')}) RETURNING * `;
         console.log('insertSqlQuery - insertSql: ', insertSql);
